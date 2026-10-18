@@ -1,0 +1,6 @@
+{
+  "name": "K-SOLUTIONS - Vehicle Transaction SaaS",
+  "description": "A transparent, professionally managed vehicle transaction and auction platform localized in English and Japanese with digital inspection reports, cost breakdown, and customer portal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', 'Noto Sans JP', sans-serif;
+  }
+  body {
+    overscroll-behavior: none;
+    background-color: #f8f9ff;
+    color: #0b1c30;
+  }
+}
+
+/* Custom scrollbars for data tables and modals */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f4fb;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #004ac6;
+}
+
+/* Tabular numerals for price feeds, VINs, dates */
+.font-tabular {
+  font-variant-numeric: tabular-nums;
+}
