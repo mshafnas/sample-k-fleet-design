@@ -4,10 +4,12 @@ import { TRANSLATIONS } from './i18n/translations';
 import { WORKFLOW_STAGES, PRICING_TIERS } from './data/mockCases';
 import { Header } from './components/Header';
 import { ConsultationModal } from './components/ConsultationModal';
+import { CarLoader } from './components/CarLoader';
 
 export default function App() {
   const [lang, setLang] = useState<Language>('ja');
   const [isConsultModalOpen, setIsConsultModalOpen] = useState(false);
+  const [showCarLoader, setShowCarLoader] = useState(false);
 
   // Pricing calculator state
   const [calcVehiclePrice, setCalcVehiclePrice] = useState<number>(4500000);
@@ -1224,7 +1226,16 @@ export default function App() {
 
           <div className="mt-8 pt-6 border-t border-[#1e344f] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
             <p>{t.footer_copyright}</p>
-            <div className="flex items-center gap-4">
+            <div className="flex flex-wrap items-center gap-3 sm:gap-4">
+              <button
+                onClick={() => setShowCarLoader(true)}
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#1e344f]/80 hover:bg-[#004ac6] text-white transition-all text-xs font-semibold border border-[#2a4568] shadow-sm hover:shadow-md active:scale-98"
+                title={lang === 'ja' ? '車両アニメーションローダーをプレビュー' : 'Preview car animation loader'}
+              >
+                <span className="material-symbols-outlined text-sm text-[#60a5fa]">directions_car</span>
+                <span>{lang === 'ja' ? '車ローダーを再生' : 'Preview Car Loader'}</span>
+              </button>
+              <span className="text-slate-600 hidden sm:inline">•</span>
               <span>{t.footer_iso}</span>
               <span>•</span>
               <span>{t.footer_fincen}</span>
@@ -1232,6 +1243,15 @@ export default function App() {
           </div>
         </div>
       </footer>
+
+      {/* Automotive Car Animation Loader Modal / Replay */}
+      {showCarLoader && (
+        <CarLoader
+          lang={lang}
+          minDurationMs={2200}
+          onComplete={() => setShowCarLoader(false)}
+        />
+      )}
 
       {/* Modals */}
       <ConsultationModal
