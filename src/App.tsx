@@ -85,11 +85,16 @@ export default function App() {
                   </div>
 
                   <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#0b1c30] tracking-tight leading-[1.15] mb-4">
-                    {t.hero_title_line1} <br className="hidden sm:inline" />
-                    {t.hero_title_line2}
+                    {t.hero_title_line1}
+                    {t.hero_title_line2 && (
+                      <>
+                        {' '}<br className="hidden sm:inline" />
+                        {t.hero_title_line2}
+                      </>
+                    )}
                   </h1>
 
-                  <p className="text-base md:text-lg text-slate-600 max-w-xl mb-6 leading-relaxed">
+                  <p className="text-base md:text-lg text-slate-600 max-w-xl mb-6 leading-relaxed whitespace-pre-line">
                     {t.hero_subtitle}
                   </p>
 
@@ -105,7 +110,7 @@ export default function App() {
 
                     <button
                       onClick={() => {
-                        const el = document.getElementById('how-it-works');
+                        const el = document.getElementById('why-k-solutions') || document.getElementById('how-it-works');
                         if (el) el.scrollIntoView({ behavior: 'smooth' });
                       }}
                       className="inline-flex items-center justify-center font-semibold text-sm px-6 py-3 rounded-lg bg-white text-[#0b1c30] border border-[#dae2fd] shadow-sm hover:bg-[#f8f9ff] hover:border-[#004ac6] transition-all min-h-[44px]"
@@ -172,7 +177,7 @@ export default function App() {
                   <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0b1c30] tracking-tight mb-3">
                     {t.value_title}
                   </h2>
-                  <p className="text-base text-slate-600 leading-relaxed">
+                  <p className="text-base text-slate-600 leading-relaxed whitespace-pre-line">
                     {t.value_desc}
                   </p>
                 </div>
@@ -1150,7 +1155,7 @@ export default function App() {
                   </button>
                   <button
                     onClick={() => {
-                      const el = document.getElementById('how-it-works');
+                      const el = document.getElementById('why-k-solutions') || document.getElementById('how-it-works');
                       if (el) el.scrollIntoView({ behavior: 'smooth' });
                     }}
                     className="inline-flex items-center justify-center text-sm font-semibold px-6 py-3.5 rounded-lg bg-white text-[#0b1c30] border border-[#dae2fd] shadow-sm hover:bg-[#f8f9ff] hover:border-[#004ac6] transition-all min-h-[44px]"

@@ -17,9 +17,9 @@ export const TRANSLATIONS = {
     hero_badge: 'Digital Vehicle Transaction Management · SaaS Platform',
     hero_title_line1: 'Buy and Sell Vehicles',
     hero_title_line2: 'With Confidence.',
-    hero_subtitle: 'A transparent, professionally managed vehicle transaction platform that helps you request, inspect, review, approve, sign, and track your vehicle transaction from one place.',
-    hero_cta_start: 'Get Started',
-    hero_cta_how: 'Explore How It Works',
+    hero_subtitle: "That's what K-SOLUTIONS aims to deliver. Our professional appraisers search nationwide for vehicles, inspect potential purchases on-site, and compare vehicle conditions and prices. From buying to selling, we're on your side.",
+    hero_cta_start: 'Get a Free Buying or Selling Consultation',
+    hero_cta_how: 'See Why Customers Choose Us',
     hero_cta_login: 'Customer Login',
     hero_trust_inspection: 'Professional Inspection',
     hero_trust_pricing: 'Transparent Pricing',
@@ -36,8 +36,8 @@ export const TRANSLATIONS = {
 
     // Problem / Value Proposition
     value_badge: 'Operational Clarity',
-    value_title: 'Vehicle Transactions Shouldn’t Be Complicated.',
-    value_desc: 'Vehicle acquisition traditionally suffers from fragmented communication, opaque markups, unverified defects, and scattered paper contracts. K-SOLUTIONS brings the entire process into one structured platform.',
+    value_title: 'The Right Vehicle. The Right Price. Complete Peace of Mind.',
+    value_desc: 'Buying a used vehicle comes with important questions. Is the price fair? Has the vehicle been repaired after an accident or damaged by flooding? Could unexpected repair costs arise?\n\nK-SOLUTIONS helps you make informed decisions through professional inspections, market comparisons, and transparent pricing.',
     pill_transparency_title: 'Transparency',
     pill_transparency_desc: 'See the vehicle condition, costs, fees, and transaction status clearly. Never encounter surprise surcharges at the end of a transaction.',
     pill_transparency_point: 'Itemized breakdowns',
@@ -295,11 +295,11 @@ export const TRANSLATIONS = {
 
     // Hero
     hero_badge: 'デジタル車両取引管理 · SaaSプラットフォーム',
-    hero_title_line1: '確かな信頼と透明性を、',
-    hero_title_line2: 'すべての車両取引に。',
-    hero_subtitle: '車両調達のリクエストから実車検査、見積確認、承認、電子署名、納車追跡までを一元管理。不透明な仲介マージンを排除した、新時代の車両売買プラットフォームです。',
-    hero_cta_start: '今すぐ始める',
-    hero_cta_how: '取引プロセスを見る',
+    hero_title_line1: '中古車・トラック販売店で買う前に。',
+    hero_title_line2: '',
+    hero_subtitle: '安く買いたい。高く売りたい。でも、安心も譲れない。\n\nそのすべてを目指すのがK-SOLUTIONS。自社のプロ査定員が全国から車を探し、候補車両を現地で直接確認。状態も価格も比較。購入から売却まで、あなたの立場でサポートします。',
+    hero_cta_start: '購入・売却を無料相る',
+    hero_cta_how: '選ばれる理由を見る',
     hero_cta_login: '顧客ログイン',
     hero_trust_inspection: '有資格査定士の実車検査',
     hero_trust_pricing: '完全明朗な実費開示',
@@ -316,8 +316,8 @@ export const TRANSLATIONS = {
 
     // Problem / Value Proposition
     value_badge: '業務プロセスの透明化',
-    value_title: '車両取引は、もっと明確であるべきです。',
-    value_desc: '従来の車両購入・オークション代行は、不透明な上乗せ費用、書面契約の煩雑さ、電話連絡の手間が課題でした。K-SOLUTIONSは、すべての取引工程をひとつの高信頼SaaS基盤へ統合します。',
+    value_title: '価格も、安心も。妥協しない車選び。',
+    value_desc: '中古車選びには、購入前に確認しておきたいことがたくさんあります。相場より高くないか、修復歴や水没歴はないか、購入後に大きな修理費用が発生しないか。\n\nK-SOLUTIONSでは、プロの視点から車両の状態と価格を確認し、お客様が納得して判断できるようサポートします。',
     pill_transparency_title: '透明性の確保',
     pill_transparency_desc: '車両原価、手数料、実費税金、陸送費まで全明細を事前提示。取引完了後の予期せぬ追加請求は一切ありません。',
     pill_transparency_point: '明細単位の全費目開示',
