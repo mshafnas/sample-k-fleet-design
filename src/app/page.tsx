@@ -1,5 +1,5 @@
-import App from "../App";
+import KSolutionsWebsite from "../features/website/KSolutionsWebsite";
 
 export default function HomePage() {
-  return <App />;
+  return <KSolutionsWebsite />;
 }
