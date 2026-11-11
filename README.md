@@ -5,13 +5,13 @@ The public K-SOLUTIONS website uses **Next.js App Router**, **React 19**, **Type
 ## Requirements
 
 - Node.js 20.9 or newer (Node.js 22 LTS recommended)
-- Yarn 1.x or npm
+- npm
 
 ## Development
 
 ```bash
-yarn install
-yarn dev
+npm install
+npm run dev
 ```
 
 Open http://localhost:3000.
@@ -19,9 +19,8 @@ Open http://localhost:3000.
 ## Production
 
 ```bash
-yarn install
-yarn build
-yarn start
+npm run build
+npm run start
 ```
 
 The production server listens on port 3000 by default. Set `PORT` when deploying to a platform that assigns a port.
