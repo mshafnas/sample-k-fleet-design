@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from 'react';
 import { Language } from './types';
 import { TRANSLATIONS } from './i18n/translations';
