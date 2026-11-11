@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Language } from './types';
 import { TRANSLATIONS } from './i18n/translations';
 import { WORKFLOW_STAGES, PRICING_TIERS } from './data/mockCases';
@@ -18,6 +18,10 @@ export default function App() {
   const [expandedFaqIndex, setExpandedFaqIndex] = useState<number | null>(null);
 
   const t = TRANSLATIONS[lang];
+
+  useEffect(() => {
+    document.documentElement.lang = lang;
+  }, [lang]);
 
   // Language toggle
   const toggleLanguage = () => {
