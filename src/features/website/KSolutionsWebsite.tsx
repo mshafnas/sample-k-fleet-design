@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
-import { Language } from './types';
-import { TRANSLATIONS } from './i18n/translations';
-import { WORKFLOW_STAGES, PRICING_TIERS } from './data/mockCases';
-import { Header } from './components/Header';
-import { ConsultationModal } from './components/ConsultationModal';
-import { CarLoader } from './components/CarLoader';
+"use client";
+
+import React, { useEffect, useState } from 'react';
+import { Language } from '../../types';
+import { TRANSLATIONS } from '../../i18n/translations';
+import { WORKFLOW_STAGES, PRICING_TIERS } from '../../data/mockCases';
+import { Header } from '../../components/Header';
+import { ConsultationModal } from '../../components/ConsultationModal';
+import { CarLoader } from '../../components/CarLoader';
 
 export default function App() {
   const [lang, setLang] = useState<Language>('ja');
@@ -16,6 +18,10 @@ export default function App() {
   const [expandedFaqIndex, setExpandedFaqIndex] = useState<number | null>(null);
 
   const t = TRANSLATIONS[lang];
+
+  useEffect(() => {
+    document.documentElement.lang = lang;
+  }, [lang]);
 
   // Language toggle
   const toggleLanguage = () => {
